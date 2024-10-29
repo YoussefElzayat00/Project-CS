@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Columns with Navigation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Custom CSS -->
+<style>
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.nav-links { 
+    list-style: none;
+    margin-right: 20px;
+    display: flex;
+}
+
+.nav-links li { 
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+nav h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.book {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.card-title {
+    color: #007BFF;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+</style>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" "https://www.browserstack.com/guide/build-a-website-using-html-css" href="#">About</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="C:\Users\PC\OneDrive\Documents\contact.html">Contact</a>
+               </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Font Size Control -->
+    <div class="text-center mt-3">
+        <button class="btn btn-secondary" onclick="changeFontSize(-1)">A-</button>
+        <button class="btn btn-secondary" onclick="changeFontSize(1)">A+</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <h1 class="text-center">EASY LEARN</h1>
+        <div class="row">
+            <!-- Column 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="C:\Users\PC\Downloads\CHEM..jpg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Chemistry</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="F:\CS Project\Chemistry\Organic\organic.html"class="card-link">organic</a></li>
+                            <li><a href="F:\CS Project\Chemistry\Inorgainc\inorganic.html" class="card-link">Inorganic</a></li>
+                            <li><a href="#" class="card-link">Link 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="C:\Users\PC\Downloads\ENGLISH.jpg" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">English</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="card-link">Reading</a></li>
+                            <li><a href="#" class="card-link">Speaking</a></li>
+                            <li><a href="#" class="card-link">Writing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="C:\Users\PC\Downloads\history.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">History</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="F:\CS Project\History\Books.html" class="card-link">Books</a></li>
+                            <li><a href="F:\CS Project\History\videos history.html" class="card-link">Video</a></li>
+                            <li><a href="#" class="card-link">Link 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 4 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="C:\Users\PC\Downloads\maths.png" class="card-img-top" alt="Image 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Maths</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="card-link">Link 1</a></li>
+                            <li><a href="#" class="card-link">Link 2</a></li>
+                            <li><a href="#" class="card-link">Link 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 5 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="C:\Users\PC\Downloads\physics00.jpg" class="card-img-top" alt="Image 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Physices</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="card-link">Link 1</a></li>
+                            <li><a href="#" class="card-link">Link 2</a></li>
+                            <li><a href="#" class="card-link">Link 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 6 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="C:\Users\PC\Downloads\programming...jpg" class="card-img-top" alt="Image 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Programming</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="card-link">Courses</a></li>
+                            <li><a href="#" class="card-link">Expirence & Application</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Font size control
+        let currentFontSize = 16; // default font size
+
+        function changeFontSize(delta) {
+            currentFontSize += delta;
+            document.body.style.fontSize = currentFontSize + 'px';
+        }
+    </script>
+</body>
+</html>
